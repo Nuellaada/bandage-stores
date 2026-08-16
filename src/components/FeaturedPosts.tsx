@@ -1,34 +1,103 @@
-
-
 function FeaturedPosts() {
     return (
-        <section id="featuredProducts">
-            <div id="productHeadingCont">
-                <h4 id="gray">Featured Products</h4>
-                <h3>THE BEST SERVICES</h3>
-                <p id="paragraph">Problems trying to resolve the conflict between </p>
+        <section id="featuredPosts">
+            <div id="fpHeadingCont">
+                <h6 id="blue">Practice Advice</h6>
+                <h3>Featured Posts</h3>
             </div>
 
-            <div id="productCardCont">
-                <div id="productCard">
-                    {/* image */}
-                    <h3>Easy Wins</h3>
-                    <p id="paragraph">Get your best looking smile now!</p>
+            <div id="fpCardCont">
+                <div id="fpCard">
+                    <div id="fpCardBackground"></div>
+
+                    <div id="fpCardOther">
+                        <div id="fpCaption"></div>
+
+                        <h4>Loudest à la Madison #1 (L'integral)</h4>
+
+                        <p id="paragraph">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+
+                        <div id="fpCardContainer">
+                            <div id="fpDate">
+                                {/* Clock icon */}
+                                <p id="small">22 April 2021</p>
+                            </div>
+
+                            <div id="fpComment">
+                                {/* Clock icon */}
+                                <p id="small">10 comments</p>
+                            </div>
+                        </div>
+
+                        <div id="fpCardButtonCont">
+                            <h6>Learn More</h6>
+                            {/* Arrow */}
+                        </div>
+                    </div>
+                    
                 </div>
 
-                <div id="productCard">
-                    {/* image */}
-                    <h3>Concrete</h3>
-                    <p id="paragraph">Defalcate is most focused in helping you discover your most beautiful smile</p>
+                <div id="fpCard">
+                    <div id="fpCardBackground"></div>
+
+                    <div id="fpCardOther">
+                        <div id="fpCaption"></div>
+
+                        <h4>Loudest à la Madison #1 (L'integral)</h4>
+
+                        <p id="paragraph">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+
+                        <div id="fpCardContainer">
+                            <div id="fpDate">
+                                {/* Clock icon */}
+                                <p id="small">22 April 2021</p>
+                            </div>
+
+                            <div id="fpComment">
+                                {/* Clock icon */}
+                                <p id="small">10 comments</p>
+                            </div>
+                        </div>
+
+                        <div id="fpCardButtonCont">
+                            <h6>Learn More</h6>
+                            {/* Arrow */}
+                        </div>
+                    </div>
+                    
                 </div>
 
-                <div id="productCard">
-                    {/* image */}
-                    <h3>Hack Growth</h3>
-                    <p id="paragraph">Overcame any hurdle or any other problem.</p>
+                <div id="fpCard">
+                    <div id="fpCardBackground"></div>
+
+                    <div id="fpCardOther">
+                        <div id="fpCaption"></div>
+
+                        <h4>Loudest à la Madison #1 (L'integral)</h4>
+
+                        <p id="paragraph">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+
+                        <div id="fpCardContainer">
+                            <div id="fpDate">
+                                {/* Clock icon */}
+                                <p id="small">22 April 2021</p>
+                            </div>
+
+                            <div id="fpComment">
+                                {/* Clock icon */}
+                                <p id="small">10 comments</p>
+                            </div>
+                        </div>
+
+                        <div id="fpCardButtonCont">
+                            <h6>Learn More</h6>
+                            {/* Arrow */}
+                        </div>
+                    </div>
+                    
                 </div>
+
             </div>
-
         </section>
     )
 }
