@@ -1,4 +1,6 @@
-
+import EasyIcon from '../assets/book-reader.svg'
+import ConcreteIcon from '../assets/carbon_book.svg'
+import GrowthIcon from '../assets/arrow-growth.svg'
 
 function BestServices() {
     return (
@@ -11,19 +13,19 @@ function BestServices() {
 
             <div id="productCardCont">
                 <div id="productCard">
-                    {/* image */}
+                    <img src={EasyIcon} alt="" className="productIcon" />
                     <h3>Easy Wins</h3>
                     <p id="paragraph">Get your best looking smile now!</p>
                 </div>
 
                 <div id="productCard">
-                    {/* image */}
+                    <img src={ConcreteIcon} alt="" className="productIcon" />
                     <h3>Concrete</h3>
                     <p id="paragraph">Defalcate is most focused in helping you discover your most beautiful smile</p>
                 </div>
 
                 <div id="productCard">
-                    {/* image */}
+                    <img src={GrowthIcon} alt="" className="productIcon" />
                     <h3>Hack Growth</h3>
                     <p id="paragraph">Overcame any hurdle or any other problem.</p>
                 </div>

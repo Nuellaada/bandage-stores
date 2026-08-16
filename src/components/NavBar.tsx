@@ -1,4 +1,7 @@
-
+import RegisterIcon from '../assets/register-icon.svg'
+import SearchIcon from '../assets/search-icon.svg'
+import CartIcon from '../assets/cart-icon.svg'
+import LoveIcon from '../assets/love-icon.svg'
 
 function NavBar() {
 
@@ -23,21 +26,21 @@ function NavBar() {
             
             <div id="navBarRight">
                 <div id="registerCont">
-                    {/* icon */}
-                    <p id="navText">Login / Register</p>
+                    <img src={RegisterIcon} alt="" className="iconImg" />
+                    <p id="link">Login / Register</p>
                 </div>
 
                 <div id="otherIconCont">
                     <div id="searchCont">
-                        {/* add search icon */}
+                        <img src={SearchIcon} alt="" className="iconImg" />
                     </div>
                     <div id="searchCont">
-                        {/* add cart icon */}
-                        <p id="otherIconText">1</p>
+                        <img src={CartIcon} alt="" className="iconImg" />
+                        <p id="link">1</p>
                     </div>
                     <div id="searchCont">
-                        {/* add love icon */}
-                        <p id="otherIconText">1</p>
+                        <img src={LoveIcon} alt="" className="iconImg" />
+                        <p id="link">1</p>
                     </div>
                 </div>
 

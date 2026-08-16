@@ -56,7 +56,7 @@ function Footer() {
                     <div id="subscribeContainer">
                         <div id="subscribeCont">
                             <input className="emailInput" type="email" placeholder="Your Email" />
-                            <button id="primaryButton">Subscribe</button>
+                            <button id="primaryButton footerB">Subscribe</button>
                         </div>
                         <p id="small">Lore imp sum dolor Amit</p>
                     </div>

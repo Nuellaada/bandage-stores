@@ -1,7 +1,7 @@
-function CTA() {
+function CallToAction() {
     return(
-        <section id="CTA">
-            <div id="CTAContainer">
+        <section id="callToAction">
+            <div id="callToActionContainer">
                 <h6 id="blue">Designing Better Experience</h6>
                 <h2>Problems trying to resolve the conflict between </h2>
                 <p id="paragraph">Problems trying to resolve the conflict between the two major realms of Classical physics: </p>
@@ -13,4 +13,4 @@ function CTA() {
     )
 }
 
-export default CTA
+export default CallToAction
