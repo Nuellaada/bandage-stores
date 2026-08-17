@@ -1,3 +1,10 @@
+import FPCardImageOne from '../assets/fp-product-card1.png'
+import FPCardImageTwo from '../assets/fp-product-card2.png'
+import FPCardImageThree from '../assets/fp-product-card3.png'
+import NextArrowIcon from '../assets/icon-arrow-next.svg'
+import ClockIcon from '../assets/icons-calendar.svg'
+import ChartIcon from '../assets/icon-chart.svg'
+
 function FeaturedPosts() {
     return (
         <section id="featuredPosts">
@@ -8,7 +15,9 @@ function FeaturedPosts() {
 
             <div id="fpCardCont">
                 <div id="fpCard">
-                    <div id="fpCardBackground"></div>
+                    <div id="fpCardBackground">
+                        <img className="fpCardImg" src={FPCardImageOne} alt="" />
+                    </div>
 
                     <div id="fpCardOther">
                         <div id="fpCaption">
@@ -23,26 +32,28 @@ function FeaturedPosts() {
 
                         <div id="fpCardContainer">
                             <div id="fpDate">
-                                {/* Clock icon */}
+                                <img className="iconImg" src={ClockIcon} alt="" />
                                 <p id="small">22 April 2021</p>
                             </div>
 
                             <div id="fpDate">
-                                {/* Clock icon */}
+                                <img className="iconImg" src={ChartIcon} alt="" />
                                 <p id="small">10 comments</p>
                             </div>
                         </div>
 
                         <div id="fpCardButtonCont">
                             <h6>Learn More</h6>
-                            {/* Arrow */}
+                            <img className="iconImg" src={NextArrowIcon} alt="" />
                         </div>
                     </div>
                     
                 </div>
 
                 <div id="fpCard">
-                    <div id="fpCardBackground"></div>
+                    <div id="fpCardBackground">
+                        <img className="fpCardImg" src={FPCardImageTwo} alt="" />
+                    </div>
 
                     <div id="fpCardOther">
                         <div id="fpCaption">
@@ -57,26 +68,28 @@ function FeaturedPosts() {
 
                         <div id="fpCardContainer">
                             <div id="fpDate">
-                                {/* Clock icon */}
+                                <img className="iconImg" src={ClockIcon} alt="" />
                                 <p id="small">22 April 2021</p>
                             </div>
 
-                            <div id="fpComment">
-                                {/* Clock icon */}
+                            <div id="fpDate">
+                                <img className="iconImg" src={ChartIcon} alt="" />
                                 <p id="small">10 comments</p>
                             </div>
                         </div>
 
                         <div id="fpCardButtonCont">
                             <h6>Learn More</h6>
-                            {/* Arrow */}
+                            <img className="iconImg" src={NextArrowIcon} alt="" />
                         </div>
                     </div>
                     
                 </div>
 
                 <div id="fpCard">
-                    <div id="fpCardBackground"></div>
+                    <div id="fpCardBackground">
+                        <img className="fpCardImg" src={FPCardImageThree} alt="" />
+                    </div>
 
                     <div id="fpCardOther">
                         <div id="fpCaption">
@@ -91,19 +104,19 @@ function FeaturedPosts() {
 
                         <div id="fpCardContainer">
                             <div id="fpDate">
-                                {/* Clock icon */}
+                                <img className="iconImg" src={ClockIcon} alt="" />
                                 <p id="small">22 April 2021</p>
                             </div>
 
-                            <div id="fpComment">
-                                {/* Clock icon */}
+                            <div id="fpDate">
+                                <img className="iconImg" src={ChartIcon} alt="" />
                                 <p id="small">10 comments</p>
                             </div>
                         </div>
 
                         <div id="fpCardButtonCont">
                             <h6>Learn More</h6>
-                            {/* Arrow */}
+                            <img className="iconImg" src={NextArrowIcon} alt="" />
                         </div>
                     </div>
                     

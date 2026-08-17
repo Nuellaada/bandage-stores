@@ -1,12 +1,16 @@
+import FacebookIcon from '../assets/ft-facebook.svg'
+import InstagramIcon from '../assets/ft-instagram.svg'
+import TwitterIcon from '../assets/ft-twitter.svg'
+
 function Footer() {
     return (
         <section id="footer">
             <div id="footerTop">
                 <p id="logo">Bandage</p>
                 <div id="footerIcons">
-                    {/* facebook icon */}
-                    {/* instagram icon */}
-                    {/* twitter icon */}
+                    <img className="iconImg" src={FacebookIcon} alt="" />
+                    <img className="iconImg" src={InstagramIcon} alt="" />
+                    <img className="iconImg" src={TwitterIcon} alt="" />
                 </div>
             </div>
 
@@ -56,7 +60,7 @@ function Footer() {
                     <div id="subscribeContainer">
                         <div id="subscribeCont">
                             <input className="emailInput" type="email" placeholder="Your Email" />
-                            <button id="primaryButton footerB">Subscribe</button>
+                            <button id="primaryButton">Subscribe</button>
                         </div>
                         <p id="small">Lore imp sum dolor Amit</p>
                     </div>

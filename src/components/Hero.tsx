@@ -13,7 +13,7 @@ function Hero() {
                 <div id="heroRightTop">
                     <div id="heroLeftContainer">
                         <h6 id="green">5 items</h6>
-                        <h2>FURNITURE</h2>
+                        <h3>FURNITURE</h3>
                         <h6>Read More</h6>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ function Hero() {
                     <div id="bottomCont">
                         <div id="heroLeftContainer">
                             <h6 id="green">5 items</h6>
-                            <h2>FURNITURE</h2>
+                            <h3>FURNITURE</h3>
                             <h6>Read More</h6>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ function Hero() {
                     <div id="bottomCont One">
                         <div id="heroLeftContainer">
                             <h6 id="green">5 items</h6>
-                            <h2>FURNITURE</h2>
+                            <h3>FURNITURE</h3>
                             <h6>Read More</h6>
                         </div>
                     </div>
