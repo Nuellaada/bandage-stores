@@ -148,7 +148,8 @@ ul {
 }
 
 #heroLeft {
-  max-width: 452px;
+  /*max-width: 452px;*/
+  flex: 1;
   height: 616px;
   width: 100%;
   background-image: url(./assets/hero-left-img.png);
@@ -177,6 +178,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex: 1.5;
 }
 
 #heroRightTop {
@@ -622,4 +624,163 @@ h1, h2, h3, h4, h5, h6, p {
 
 .pcpDiscounted {
   color: var(--text-success);
+}
+
+/* Responsive Layouts */
+@media (min-width: 1024px) {
+  #navBar {
+    padding: 20px 24px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #navBarLeft {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 40px;
+  }
+
+  #logoContainer {
+    padding-right: 40px;
+    width: auto;
+  }
+
+  #navContents ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #navBarRight,
+  #registerCont {
+    display: flex;
+  }
+}
+
+@media (min-width: 640px) {
+  #featuredProductsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #featuredProductsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  #featuredProductsGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  #heroRightBottom {
+    flex-direction: row;
+  }
+
+  #bottomCont,
+  #bottomContOne {
+    max-width: 332px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    padding: 80px 120px;
+    flex-direction: row;
+  }
+
+  #heroLeft {
+    max-width: 452px;
+    height: 616px;
+    flex: 1;
+  }
+
+    #heroRight {
+    flex: 1.5;
+  }
+
+  #heroRightTop {
+    max-width: 679px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  #bestServices {
+    padding: 80px 180px;
+  }
+
+  #productCardCont {
+    flex-direction: row;
+  }
+
+  #productCard {
+    max-width: 328px;
+    height: 254px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #featuredPosts {
+    padding: 0 180px 80px 180px;
+  }
+
+  #fpCardCont {
+    flex-direction: row;
+  }
+
+  #fpCardBackground {
+    max-width: 348px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #testimonial {
+    padding: 80px 115px;
+    flex-direction: row;
+  }
+
+  #testimonialLeftCont {
+    width: 70%;
+  }
+
+  #testimonialRight {
+    align-items: flex-start;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #callToActionContainer {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #callToAction {
+    padding: 140px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  #footer {
+    padding: 0 180px;
+  }
+
+  #footerTop {
+    flex-direction: row;
+    align-items: center;
+  }
+
+    #footerMid {
+    flex-direction: row;
+  }
+
+  .emailInput {
+    max-width: 204px;
+  }
 }

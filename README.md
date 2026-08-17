@@ -1,75 +1,30 @@
-# React + TypeScript + Vite
+Bandage Stores
+A responsive e-commerce landing page built with React, TypeScript, and Redux Toolkit Query, featuring a live product grid fetched from the DummyJSON API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Overview
+This project is a landing page for a fictional e-commerce brand ("Bandage"), built to match a provided Figma design across mobile, tablet, and desktop breakpoints. It includes a hero section, a bestseller product grid populated from a live API with pagination ("Load More"), a services section, featured blog posts, a testimonial section, a call-to-action banner, and a footer.
 
-Currently, two official plugins are available:
+The bestseller product grid is powered by Redux Toolkit Query, which handles fetching, loading states, error states, and caching against the DummyJSON Products API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tech Stack
+React + Vite + TypeScript
+Vanilla CSS (no CSS framework)
+Redux Toolkit
+Redux Toolkit Query (RTK Query)
 
-## React Compiler
+Deployment
+This project is deployed on Netlify.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Live URL: (https://bandage-stores.netlify.app)
 
-## Expanding the ESLint configuration
+Assumptions & Implementation Notes
+Product data is sourced from the public DummyJSON API, which does not include a pre-calculated discount price — the discounted price shown on each product card is calculated client-side from the API's price and discountPercentage fields.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Project Structure
+src/
+├── app/              # Redux store setup and typed hooks
+├── features/         # RTK Query API slices
+├── components/        # Reusable UI components, one per section
+├── pages/             # Page-level composition (LandingPage)
+├── types/             # Shared TypeScript types
+└── styles/            # Global stylesheet and CSS variables
