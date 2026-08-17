@@ -627,160 +627,185 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Responsive Layouts */
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
+  /* Top Bar */
+  #topBarContainer {
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+ 
+  #topBarCenter {
+    display: none;
+  }
+ 
+  #topBarRight {
+    gap: 8px;
+  }
+
+   /* Nav bar */
   #navBar {
-    padding: 20px 24px;
-    flex-direction: row;
-    align-items: center;
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
-
+ 
   #navBarLeft {
-    flex-direction: row;
-    align-items: center;
-    width: auto;
-    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
   }
-
+ 
   #logoContainer {
-    padding-right: 40px;
+    padding-right: 0;
     width: auto;
   }
-
+ 
   #navContents ul {
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
-
+ 
   #navBarRight,
   #registerCont {
-    display: flex;
+    display: none;
+  }
+ 
+  /* Hero */
+  #hero {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+ 
+  #heroLeft {
+    flex: none;
+    height: 280px;
+    width: 100%;
+  }
+ 
+  #heroRight {
+    flex: none;
+  }
+ 
+  #heroRightTop {
+    max-width: 100%;
+    height: 220px;
+  }
+ 
+  #heroRightBottom {
+    flex-direction: column;
+  }
+ 
+  #bottomCont,
+  #bottomContOne {
+    max-width: 100%;
+    height: 200px;
+  }
+ 
+  /* Best Services */
+  #bestServices {
+    padding: 60px 24px;
+    gap: 40px;
+  }
+ 
+  #productCardCont {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+ 
+  #productCard {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  /* Featured Posts */
+  #featuredPosts {
+    padding: 0 20px 60px 20px;
+    gap: 40px;
+  }
+ 
+  #fpCardCont {
+    flex-direction: column;
+    gap: 30px;
+  }
+ 
+  #fpCardBackground {
+    max-width: 100%;
+  }
+ 
+  /* Testimonial */
+  #testimonial {
+    padding: 60px 24px;
+    flex-direction: column;
+    gap: 40px;
+  }
+ 
+  #testimonialLeftCont {
+    width: 100%;
+  }
+ 
+  #testimonialRight {
+    align-items: center;
+  }
+ 
+  /* CallToAction */
+  #callToAction {
+    padding: 60px 24px;
+  }
+ 
+  #callToActionContainer {
+    width: 90%;
+  }
+ 
+  /* Footer */
+  #footer {
+    padding: 0 24px;
+  }
+ 
+  #footerTop {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+ 
+  #footerMid {
+    flex-direction: column;
+    gap: 30px;
+  }
+ 
+  .emailInput {
+    max-width: 100%;
+  }
+ 
+  /* Featured Products */
+  #featuredProducts {
+    padding: 40px 20px;
+    gap: 24px;
+  }
+ 
+  #featuredProductsGrid {
+    grid-template-columns: 1fr;
   }
 }
-
-@media (min-width: 640px) {
+ 
+/* Tablet-only exception — narrower range inside the mobile block above,
+   placed after it so it correctly overrides for this specific range */
+@media (min-width: 640px) and (max-width: 1023px) {
   #featuredProductsGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-@media (min-width: 1024px) {
-  #featuredProductsGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1280px) {
-  #featuredProductsGrid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
+ 
+@media (min-width: 768px) and (max-width: 1023px) {
   #heroRightBottom {
     flex-direction: row;
   }
-
+ 
   #bottomCont,
   #bottomContOne {
     max-width: 332px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    padding: 80px 120px;
-    flex-direction: row;
-  }
-
-  #heroLeft {
-    max-width: 452px;
-    height: 616px;
-    flex: 1;
-  }
-
-    #heroRight {
-    flex: 1.5;
-  }
-
-  #heroRightTop {
-    max-width: 679px;
-    height: 300px;
-  }
-}
-
-@media (min-width: 768px) {
-  #bestServices {
-    padding: 80px 180px;
-  }
-
-  #productCardCont {
-    flex-direction: row;
-  }
-
-  #productCard {
-    max-width: 328px;
-    height: 254px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #featuredPosts {
-    padding: 0 180px 80px 180px;
-  }
-
-  #fpCardCont {
-    flex-direction: row;
-  }
-
-  #fpCardBackground {
-    max-width: 348px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #testimonial {
-    padding: 80px 115px;
-    flex-direction: row;
-  }
-
-  #testimonialLeftCont {
-    width: 70%;
-  }
-
-  #testimonialRight {
-    align-items: flex-start;
-  }
-}
-
-
-@media (min-width: 768px) {
-  #callToActionContainer {
-    width: 60%;
-  }
-}
-
-@media (min-width: 1024px) {
-  #callToAction {
-    padding: 140px;
-  }
-}
-
-
-@media (min-width: 1024px) {
-  #footer {
-    padding: 0 180px;
-  }
-
-  #footerTop {
-    flex-direction: row;
-    align-items: center;
-  }
-
-    #footerMid {
-    flex-direction: row;
-  }
-
-  .emailInput {
-    max-width: 204px;
   }
 }
